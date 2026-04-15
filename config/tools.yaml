@@ -1,0 +1,18 @@
+tools:
+  - name: web_search
+    description: Search the web for information
+    enabled: true
+    parameters:
+      - name: query
+        type: string
+        required: true
+        description: The search query
+
+  - name: calculator
+    description: Evaluate a mathematical expression
+    enabled: true
+    parameters:
+      - name: expression
+        type: string
+        required: true
+        description: The math expression to evaluate

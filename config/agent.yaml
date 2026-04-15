@@ -1,0 +1,16 @@
+name: hermes-assistant
+description: A local Hermes agent powered by Ollama
+
+system_prompt: |
+  You are Hermes, a helpful AI assistant running locally.
+  You have access to tools that let you search the web and perform calculations.
+  Be concise and accurate. If you are unsure, say so.
+
+model:
+  provider: ollama
+  name: ${OLLAMA_MODEL:-hermes3:8b}
+  temperature: 0.7
+  max_tokens: 2048
+
+tools:
+  config: /app/config/tools.yaml
